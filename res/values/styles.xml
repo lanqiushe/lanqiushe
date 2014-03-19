@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- title -->
+
+    <style name="title_right_iv">
+        <item name="android:onClick">onClick</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="title_left_iv">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 登录 注册 界面 -->
+
+    <style name="login_and_register_ll" parent="@style/bt_base_ll">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+    <!--  -->
+    <style name="login_and_register_tv">
+        <item name="android:textSize">@dimen/text_size_nor__</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColor">@color/common</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 空白背景基本样式 分类 -->
+    <!-- 纯按钮 -->
+    <style name="bt_base_bt">
+        <item name="android:textColor">@color/common</item>
+        <item name="android:background">@drawable/selector_bt_hollow_orange</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- ll中有view -->
+    <style name="bt_base_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/selector_bt_hollow_orange</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- et -->
+    <style name="bt_base_et">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/selector_bt_hollow_orange</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 注册登录界面中按钮 -->
+    <style name="login_and_register_bt" parent="@style/bt_base_bt">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+    <!-- et样式 -->
+    <style name="et_common">
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ui_padding</item>
+        <item name="android:layout_marginRight">@dimen/ui_padding</item>
+        <item name="android:background">@drawable/selector_bt_hollow_orange</item>
+    </style>
+
+    <!-- 完善数据界面文字样式 -->
+    <style name="perfect_data_tv">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- me 模块 -->
+    <style name="team_info_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="team_info_ball_iv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/club_logo</item>
+    </style>
+
+    <style name="team_info_teamname_tv">
+        <item name="android:text">啦啦隊</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <!-- 通用的lv样式 -->
+    <style name="common_lv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:listSelector">#00000000</item>
+    </style>
+
+</resources>

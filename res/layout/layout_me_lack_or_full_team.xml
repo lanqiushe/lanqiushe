@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/team_info_rl" >
+
+        <ImageView
+            android:id="@+id/me_ball_iv"
+            style="@style/team_info_ball_iv" />
+
+        <TextView
+            android:id="@+id/me_teamname_tv"
+            style="@style/team_info_teamname_tv"
+            android:layout_toRightOf="@+id/me_ball_iv" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/me_add_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <include 
+       
+        layout="@layout/common_scroll_listview" />
+
+    <Button
+         android:visibility="gone"
+        android:id="@+id/me_invite_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ui_padding"
+        android:layout_marginRight="@dimen/ui_padding"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_bt_hollow_red"
+        android:text="@string/invite_friend"
+        android:textColor="@color/red" />
+    
+      <Button
+          android:visibility="gone"
+        android:id="@+id/me_exit_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ui_padding"
+        android:layout_marginRight="@dimen/ui_padding"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bt_bg_solid_red"
+        android:text="@string/exit_team"
+        android:textColor="@android:color/white" />
+    
+    
+
+</LinearLayout>

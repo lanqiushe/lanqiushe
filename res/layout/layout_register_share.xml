@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="@string/new_share"
+        android:textColor="@color/common" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/share_sina" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/share_qq" />
+    </RelativeLayout>
+
+    
+    <Button 
+        android:id="@+id/register_share_bt"
+        android:onClick="onClick"
+        android:text="@string/share"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/ui_padding"
+       android:layout_marginLeft="@dimen/ui_padding"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        style="@style/bt_base_bt"
+        
+        />
+</LinearLayout>

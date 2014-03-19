@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+    <!-- 头部信息    必须有的 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/layout_me_head" />
+
+            <!-- 球队信息 -->
+
+            <include
+                android:id="@+id/layout_me_no_team_in"
+                layout="@layout/layout_me_no_team"
+                android:visibility="gone" />
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/layout_me_lack_or_full_team_in"
+                layout="@layout/layout_me_lack_or_full_team" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

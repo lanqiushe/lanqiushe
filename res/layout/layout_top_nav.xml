@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/top_nav_left_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="球队"
+            android:textColor="@color/common" />
+
+        <TextView
+            android:id="@+id/top_nav_middle_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+              android:textColor="#929497"
+            android:text="球友" />
+
+        <TextView
+            android:id="@+id/top_nav_right_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="球场"
+            android:textColor="#929497" />
+    </LinearLayout>
+
+    <RadioGroup
+          android:id="@+id/top_nav_rb"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/top_nav_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RadioButton
+            android:id="@+id/top_nav_left_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_nav_line_bg"
+            android:button="@null"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/top_nav_middle_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_nav_line_bg"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/top_nav_right_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_nav_line_bg"
+            android:button="@null" />
+    </RadioGroup>
+
+</LinearLayout>

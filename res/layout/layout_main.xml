@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_gravity="center"
+            android:background="@color/bottom_color"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/main_tab_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/bottom_color"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/bg_radio_mypage"
+                android:gravity="center"
+                android:text="主页"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/main_tab_near"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/bottom_color"
+                android:button="@null"
+                android:drawableTop="@drawable/bg_radio_near"
+                android:gravity="center"
+                android:text="附近"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/main_tab_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/bottom_color"
+                android:button="@null"
+                android:drawableTop="@drawable/bg_radio_contacts"
+                android:gravity="center"
+                android:text="通讯"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

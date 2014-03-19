@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+
+  <com.lanqiushe.view.ScrollListView  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/set_common_scroll_listview"
+    android:cacheColorHint="#00000000"
+    android:divider="@null"
+    android:listSelector="#00000000" >
+</com.lanqiushe.view.ScrollListView>
+
+      <Button
+          
+        android:id="@+id/set_exit_login_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ui_padding"
+        android:layout_marginRight="@dimen/ui_padding"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/selector_bt_hollow_red"
+        android:text="@string/exit_login"
+        android:textColor="@color/red" />
+  
+  
+  
+  
+  
+  
+</LinearLayout>

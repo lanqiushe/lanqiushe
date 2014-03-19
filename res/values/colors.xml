@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- lj   start -->
+    <color name="gray">#C0B19F</color>
+    <color name="red">#FF2424</color>
+    <color name="common">#E8813B</color>
+    <color name="et_inside">#B1B2B2</color>
+   <color name="top_nav_bg">#DFDFDF</color>
+    <!-- lj  end -->
+
+
+    <!-- wt    start -->
+    <!-- 底部导航 -->
+    <color name="bottom_color">#31353E</color>
+ <!-- 下拉刷新界面中最后更新时间的文字色 -->
+    <color name="refresh_loading_text_color">#000000</color>
+    <color name="refresh_time_text_color">#000000</color>
+    <!-- wt  end -->
+
+</resources>

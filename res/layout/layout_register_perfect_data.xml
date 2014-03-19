@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/add_img_all" />
+
+    <include layout="@layout/divider_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ui_padding" >
+
+        <TextView
+            android:id="@+id/perfect_nickname"
+            style="@style/perfect_data_tv"
+            android:text="@string/nickname" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/perfect_nickname"
+            android:background="@null"
+            android:hint="@string/please_click_input" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ui_padding" >
+
+        <TextView
+            android:id="@+id/perfect_data_location_tv"
+            style="@style/perfect_data_tv"
+            android:text="@string/location" />
+
+        <TextView
+            style="@style/perfect_data_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/perfect_data_location_tv"
+            android:text="控球后卫" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/select" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ui_padding" >
+
+        <TextView
+            android:id="@+id/perfect_data_sex_tv"
+            style="@style/perfect_data_tv"
+            android:text="@string/sex" />
+
+        <TextView
+            style="@style/perfect_data_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/perfect_data_sex_tv"
+            android:text="男" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/select" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+</LinearLayout>
