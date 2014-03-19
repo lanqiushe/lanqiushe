@@ -1,6 +1,7 @@
 package com.lanqiushe.ui;
 
 import com.lanqiushe.R;
+import com.lanqiushe.manager.NetManager;
 import com.lanqiushe.manager.ToastManager;
 import com.lanqiushe.manager.UIManager;
 
@@ -14,7 +15,18 @@ public class LoginAndRegisterActivity extends BaseActivity {
 		setContentView(R.layout.layout_login_and_register);
 		super.onCreate(savedInstanceState);
 	}
-
+    @Override
+    protected void init() {
+    	// TODO Auto-generated method stub
+//    	if(!NetManager.isNetworkConnected(this)){
+//    		//ÍøÂçÎ´Á¬½Ó
+//    	}
+    	
+    	
+    	
+    	 
+    	super.init();
+    }
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.login_and_register_sina_ll: {

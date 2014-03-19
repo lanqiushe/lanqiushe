@@ -16,6 +16,7 @@
      />
 
     <TextView
+        android:textSize="@dimen/text_size_nor_"
         android:visibility="gone"
         android:id="@+id/item_me_team_memeber_name_tv"
         android:layout_width="wrap_content"
@@ -26,6 +27,7 @@
         />
 
     <TextView
+        android:textSize="@dimen/text_size_nor_"
        android:visibility="gone"
            android:id="@+id/item_me_team_memeber_empty_tv"
         android:layout_width="wrap_content"
@@ -35,6 +37,7 @@
         android:textColor="@color/gray" />
 
     <TextView
+        android:textSize="@dimen/text_size_nor_"
         android:visibility="gone"
         android:id="@+id/item_me_team_memeber_location_tv"
         android:layout_width="wrap_content"

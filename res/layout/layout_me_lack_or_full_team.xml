@@ -32,6 +32,8 @@
         layout="@layout/common_scroll_listview" />
 
     <Button
+         android:layout_marginBottom="10dp"
+        android:textSize="@dimen/text_size_nor_"
          android:visibility="gone"
         android:id="@+id/me_invite_bt"
         android:layout_width="match_parent"
@@ -44,7 +46,10 @@
         android:textColor="@color/red" />
     
       <Button
-          android:visibility="gone"
+             android:visibility="gone"
+          android:layout_marginBottom="10dp"
+          android:textSize="@dimen/text_size_nor_"
+          
         android:id="@+id/me_exit_bt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

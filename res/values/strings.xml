@@ -48,7 +48,8 @@
     
        <string name="title_contacts">通讯</string>
       <string name="title_nearby">附近</string>
-    
+      <string name="for_the_moment_no_team">暂无球队</string>
+       <string name="title_my">我的</string>
       
       <!-- wt 下拉刷新 -->
         <!-- 下拉刷新和上拉加载更多的文本 -->

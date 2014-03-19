@@ -16,11 +16,11 @@ import android.widget.TextView;
 public class MeTeamMemberAdapter extends BaseAdapter {
 
 	private Context context;
-    private int resource;
+    
     private ArrayList<TeamMember> list;
-    public MeTeamMemberAdapter( Context context,ArrayList<TeamMember> list,int resource){
+    public MeTeamMemberAdapter( Context context,ArrayList<TeamMember> list){
     	this.context = context;
-    	this.resource = resource;
+    	 
     	this.list = list;
     }
 	@Override
@@ -46,7 +46,7 @@ public class MeTeamMemberAdapter extends BaseAdapter {
 		 ViewHolder holder;
 		 if(convertView==null){
 			 holder = new ViewHolder();
-			 convertView = View.inflate(context, resource, null);
+			 convertView = View.inflate(context, R.layout.item_me_team_member, null);
 			 holder.head =(ImageView) convertView.findViewById(R.id.item_me_team_memeber_head_iv);
 			 holder.name = (TextView) convertView.findViewById(R.id.item_me_team_memeber_name_tv);
 			 holder.location =  (TextView) convertView.findViewById(R.id.item_me_team_memeber_location_tv);

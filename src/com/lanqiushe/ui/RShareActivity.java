@@ -12,7 +12,7 @@ public class RShareActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		setContentView(R.layout.layout_register_share);
-		TitleManager.showTitle(this, new int[] {}, R.string.share);
+		TitleManager.showTitle(this, new int[] {TitleManager.NEXT}, R.string.share);
 		super.onCreate(savedInstanceState);
 	}
 

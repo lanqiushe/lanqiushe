@@ -9,12 +9,14 @@
     android:paddingTop="10dp" >
 
     <TextView
+          android:textSize="@dimen/text_size_nor__" 
         android:id="@+id/item_set_category_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
   />
 
     <TextView
+          android:textSize="@dimen/text_size_nor__" 
         android:textColor="@color/gray"
         android:id="@+id/item_set_status_tv"
         android:layout_width="wrap_content"

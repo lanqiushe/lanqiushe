@@ -32,7 +32,9 @@ public class TitleManager {
 			for (int flag : flags) {
 				switch (flag) {
 				case NEXT:{
-                    activity.findViewById(R.id.title_next_iv).setOnClickListener(new OnClickListener() {
+					ImageView iv = (ImageView) activity.findViewById(R.id.title_next_iv);
+					iv.setVisibility(View.VISIBLE);
+                    iv.setOnClickListener(new OnClickListener() {
 						
 						@Override
 						public void onClick(View v) {

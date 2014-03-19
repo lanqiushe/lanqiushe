@@ -9,8 +9,12 @@ import com.lanqiushe.manager.ToastManager;
 import com.lanqiushe.manager.UIManager;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.InputType;
+import android.text.Selection;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -105,8 +109,11 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
             //前面验证通过。用户登录的数据就该保存
 			PreferenceManager.setString(this, ConstantManager.SP_USER_NAME,
 					cellphone);
-			UIManager.switcher(this, MainActivity.class);
-			finish();
+			//UIManager.getLoadingDialog(this,R.string.ballfriend).show();
+			
+			
+		 	UIManager.switcher(this, MainActivity.class);
+		 	finish();
 			break;
 		}
 		case R.id.login_change_user_tv:{
@@ -126,7 +133,22 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 			break;
 		}
 		case R.id.login_lock_rl: {
-			//mPwdET.setinpu
+		    ToastManager.show(this, mPwdET.getInputType()+"");
+		    
+		    
+		    
+		    ToastManager.show(this, (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD)+"");
+		      if(mPwdET.getInputType()==129){
+		    	  mPwdET.setInputType(InputType.TYPE_TEXT_VARIATION_NORMAL);
+		    	  
+		    	 
+		    	  
+//		    	  int index = mPwdET.getText().toString().trim().length();
+//		    	  mPwdET.setSelection(index);
+		      }else{
+		    	  mPwdET.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
+		      }
+			
 			break;
 		}
 

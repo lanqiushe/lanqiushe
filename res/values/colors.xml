@@ -9,7 +9,9 @@
    <color name="top_nav_bg">#DFDFDF</color>
     <!-- lj  end -->
 
-
+<!-- 间隔条颜色 -->
+<color name="divider">#E4DDD6</color>
+<color name="divider_small">#F6F3F1</color>
     <!-- wt    start -->
     <!-- 底部导航 -->
     <color name="bottom_color">#31353E</color>

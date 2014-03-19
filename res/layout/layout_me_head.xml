@@ -22,9 +22,11 @@
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
         android:text="李蛟"
+        android:textSize="@dimen/text_size_nor_"
         android:textColor="@android:color/white" />
 
     <TextView
+        android:textSize="@dimen/text_size_nor_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/me_name_tv"

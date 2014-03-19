@@ -40,6 +40,7 @@ public class MeActivity extends  BaseActivity {
 
 	 
 	protected void findViews() {
+		//
 		mNoTeam = findViewById(R.id.layout_me_no_team_in);
 		mLackFullTeam = findViewById(R.id.layout_me_lack_or_full_team_in);
 		mAdd = (ImageView) findViewById(R.id.me_add_iv);
@@ -81,8 +82,7 @@ public class MeActivity extends  BaseActivity {
 			list.add(null);
 			list.add(null);
 
-			BaseAdapter adapter = new MeTeamMemberAdapter(this, list,
-					R.layout.item_me_team_member);
+			BaseAdapter adapter = new MeTeamMemberAdapter(this, list);
 			mSlv.setAdapter(adapter);
 
 			break;
@@ -103,8 +103,8 @@ public class MeActivity extends  BaseActivity {
 			list.add(t1);
 			list.add(t1);
 
-			BaseAdapter adapter = new MeTeamMemberAdapter(this, list,
-					R.layout.item_me_team_member);
+			BaseAdapter adapter = new MeTeamMemberAdapter(this, list
+					);
 			mSlv.setAdapter(adapter);
 
 			

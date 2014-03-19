@@ -23,11 +23,11 @@ import android.widget.TextView;
 @SuppressLint("ResourceAsColor")
 public class NearbyActivity extends FragmentActivity implements
 		OnPageChangeListener {
-	private ListView mlv;
+	 
 	private ViewPager mvp;
 	 
-
-	private ArrayList<TextView> tvList;
+   
+    private ArrayList<TextView> tvList;  
 	private ArrayList<RadioButton> rbList; 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,17 +42,21 @@ public class NearbyActivity extends FragmentActivity implements
 	}
 
 	private void findViews() {
+		
+	 
+		
 		mvp = (ViewPager) findViewById(R.id.nearby_vp);
 		mvp.setOffscreenPageLimit(2);
 
 	}
 
 	private void init() {
-		tvList = new ArrayList<TextView>();
+		 tvList = new ArrayList<TextView>();
 		rbList = new ArrayList<RadioButton>();
-		tvList.add((TextView) findViewById(R.id.top_nav_left_tv));
-		tvList.add((TextView) findViewById(R.id.top_nav_middle_tv));
-		tvList.add((TextView) findViewById(R.id.top_nav_right_tv));
+		 tvList.add(((TextView) findViewById(R.id.top_nav_left_tv)));
+		 tvList.add(((TextView) findViewById(R.id.top_nav_middle_tv)));
+		 
+		 tvList.add(((TextView) findViewById(R.id.top_nav_right_tv)));
 		rbList.add((RadioButton)findViewById(R.id.top_nav_left_line));
 		rbList.add((RadioButton)findViewById(R.id.top_nav_middle_line));
 		rbList.add((RadioButton)findViewById(R.id.top_nav_right_line));
@@ -84,18 +88,28 @@ public class NearbyActivity extends FragmentActivity implements
 
 	@Override
 	public void onPageSelected(int arg0) {
-		ToastManager.show(this, arg0 + "");
+		 
+		 changeNavText(arg0);
+		
+		
+		
+
+		rbList.get(arg0).setChecked(true);
+	}
+
+	private void changeNavText(int index) {
 		// 改变导航字体
 		for (int i = 0, len = tvList.size(); i < len; i++) {
-			TextView tv = tvList.get(arg0);
-			if (i == arg0) {// 232,129,59
-				tv.setTextColor(Color.rgb(232, 129, 59));
-				continue;
+			TextView tv = tvList.get(i);
+			// 
+			tv.setTextColor(Color.rgb(146,148,151));
+			if (i == index) {// 232,129,59
+				tv.setTextColor(Color.rgb( 232,129,59));
 			}
-			// 146,148,151
-			tv.setTextColor(Color.rgb(146, 148, 151));
+			
 
 		}
-		rbList.get(arg0).setChecked(true);
+		 
+		
 	}
 }
