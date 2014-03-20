@@ -14,41 +14,44 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-                
             android:name=".ui.LoginAndRegisterActivity"
             android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".ui.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.MainActivity"></activity>
-        <activity android:name=".ui.ContactsActivity"></activity>
-        <activity android:name=".ui.NearbyActivity"></activity>
-        <activity android:name=".ui.MeActivity"></activity>
+        <activity android:name=".ui.ContactsActivity" >
+        </activity>
+        <activity android:name=".ui.NearbyActivity" >
+        </activity>
+        <activity android:name=".ui.MeActivity" >
+        </activity>
         <activity android:name=".ui.LoginActivity" >
         </activity>
         <activity android:name=".ui.RInputCellphoneActivity" >
         </activity>
         <activity android:name=".ui.RInputVerificationCodeActivity" >
         </activity>
-              
         <activity android:name=".ui.RInputPwdActivity" >
         </activity>
         <activity android:name=".ui.RPerfectDataActivity" >
         </activity>
         <activity android:name=".ui.RShareActivity" >
         </activity>
-       
-        <activity android:name=".ui.MeSetActivity"></activity>
-        <activity android:name=".ui.TestActivity"></activity>
-        
-        <activity android:name=".ui.NotifyMessageActivity"></activity>
-          <activity android:name=".ui.ChatMessageActivity"></activity>
-            <activity android:name=".ui.TeamMessageActivity"></activity>
-          
-        
+        <activity android:name=".ui.MeSetActivity" >
+        </activity>
+        <activity android:name=".ui.TestActivity" >
+        </activity>
+        <activity android:name=".ui.NotifyMessageActivity" >
+        </activity>
+        <activity android:name=".ui.ChatMessageActivity" >
+        </activity>
+        <activity android:name=".ui.TeamMessageActivity" >
+        </activity>
     </application>
 
 </manifest>

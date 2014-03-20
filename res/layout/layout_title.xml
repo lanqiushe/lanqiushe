@@ -13,14 +13,13 @@
         android:src="@drawable/title_back" />
 
     <LinearLayout
-        android:visibility="gone"
         android:id="@+id/title_set_back_ll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true" >
+        android:layout_centerVertical="true"
+        android:visibility="gone" >
 
         <ImageView
-            
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/title_set_back" />
@@ -52,9 +51,8 @@
         android:id="@+id/title_set_iv"
         style="@style/title_right_iv"
         android:src="@drawable/site" />
-    
-    
-     <ImageView
+
+    <ImageView
         android:id="@+id/title_next_iv"
         style="@style/title_right_iv"
         android:src="@drawable/title_next" />

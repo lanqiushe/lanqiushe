@@ -2,33 +2,27 @@ package com.lanqiushe.ui;
 
 import java.util.ArrayList;
 
-import com.lanqiushe.R;
-import com.lanqiushe.adapter.NearbyContentAdapter;
-import com.lanqiushe.adapter.NearbyFragmentAdapter;
-import com.lanqiushe.manager.TitleManager;
-import com.lanqiushe.manager.ToastManager;
-
-import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
-import android.widget.ListView;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
-@SuppressLint("ResourceAsColor")
+import com.lanqiushe.R;
+import com.lanqiushe.adapter.NearbyFragmentAdapter;
+import com.lanqiushe.manager.TitleManager;
+ 
 public class NearbyActivity extends FragmentActivity implements
 		OnPageChangeListener {
-	 
+
 	private ViewPager mvp;
-	 
-   
-    private ArrayList<TextView> tvList;  
-	private ArrayList<RadioButton> rbList; 
+
+	private ArrayList<TextView> tvList;
+	private ArrayList<RadioButton> rbList;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -42,24 +36,22 @@ public class NearbyActivity extends FragmentActivity implements
 	}
 
 	private void findViews() {
-		
-	 
-		
+
 		mvp = (ViewPager) findViewById(R.id.nearby_vp);
 		mvp.setOffscreenPageLimit(2);
 
 	}
 
 	private void init() {
-		 tvList = new ArrayList<TextView>();
+		tvList = new ArrayList<TextView>();
 		rbList = new ArrayList<RadioButton>();
-		 tvList.add(((TextView) findViewById(R.id.top_nav_left_tv)));
-		 tvList.add(((TextView) findViewById(R.id.top_nav_middle_tv)));
-		 
-		 tvList.add(((TextView) findViewById(R.id.top_nav_right_tv)));
-		rbList.add((RadioButton)findViewById(R.id.top_nav_left_line));
-		rbList.add((RadioButton)findViewById(R.id.top_nav_middle_line));
-		rbList.add((RadioButton)findViewById(R.id.top_nav_right_line));
+		tvList.add(((TextView) findViewById(R.id.top_nav_left_tv)));
+		tvList.add(((TextView) findViewById(R.id.top_nav_middle_tv)));
+
+		tvList.add(((TextView) findViewById(R.id.top_nav_right_tv)));
+		rbList.add((RadioButton) findViewById(R.id.top_nav_left_line));
+		rbList.add((RadioButton) findViewById(R.id.top_nav_middle_line));
+		rbList.add((RadioButton) findViewById(R.id.top_nav_right_line));
 		ArrayList<Fragment> list = new ArrayList<Fragment>();
 		list.add(new NearbyTeamFragment());
 		list.add(new NearbyBallFriendFragment());
@@ -88,11 +80,8 @@ public class NearbyActivity extends FragmentActivity implements
 
 	@Override
 	public void onPageSelected(int arg0) {
-		 
-		 changeNavText(arg0);
-		
-		
-		
+
+		changeNavText(arg0);
 
 		rbList.get(arg0).setChecked(true);
 	}
@@ -101,15 +90,13 @@ public class NearbyActivity extends FragmentActivity implements
 		// 改变导航字体
 		for (int i = 0, len = tvList.size(); i < len; i++) {
 			TextView tv = tvList.get(i);
-			// 
-			tv.setTextColor(Color.rgb(146,148,151));
+			//
+			tv.setTextColor(Color.rgb(146, 148, 151));
 			if (i == index) {// 232,129,59
-				tv.setTextColor(Color.rgb( 232,129,59));
+				tv.setTextColor(Color.rgb(232, 129, 59));
 			}
-			
 
 		}
-		 
-		
+
 	}
 }

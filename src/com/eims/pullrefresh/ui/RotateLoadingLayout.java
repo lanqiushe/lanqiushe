@@ -1,6 +1,5 @@
 package com.eims.pullrefresh.ui;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -22,8 +21,7 @@ import com.lanqiushe.R;
  * 
  * @author Li Hong
  * @since 2013-7-30
- */
-@SuppressLint("NewApi")
+ */ 
 public class RotateLoadingLayout extends LoadingLayout {
 	/** 旋转动画的时间 */
 	static final int ROTATION_ANIMATION_DURATION = 1200;

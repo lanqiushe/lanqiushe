@@ -1,6 +1,5 @@
 package com.eims.pullrefresh.ui;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -21,8 +20,7 @@ import com.eims.pullrefresh.ui.ILoadingLayout.State;
  * @author Li Hong
  * @since 2013-7-29
  * @param <T>
- */
-@SuppressLint("NewApi")
+ */ 
 public abstract class PullToRefreshBase<T extends View> extends LinearLayout
 		implements IPullToRefresh<T> {
 	/**

@@ -31,7 +31,7 @@
     <string name="invite_friend">邀请球友</string>
     <string name="exit_team">退出球队</string>
     <string name="title_set">设置</string>
-  <string name="exit_login">退出登录</string>
+    <string name="exit_login">退出登录</string>
     <!-- 设置界面 -->
     <string-array name="set_item">
         <item>新浪微博</item>
@@ -41,18 +41,17 @@
         <item>联系客服</item>
         <item>亲，给我们个好评吧！</item>
     </string-array>
-  <!-- 附近 -->
-  <string name="team">球队</string>
-   <string name="ballfriend">球友</string>
+    <!-- 附近 -->
+    <string name="team">球队</string>
+    <string name="ballfriend">球友</string>
     <string name="ballpark">球场</string>
-    
-       <string name="title_contacts">通讯</string>
-      <string name="title_nearby">附近</string>
-      <string name="for_the_moment_no_team">暂无球队</string>
-       <string name="title_my">我的</string>
-      
-      <!-- wt 下拉刷新 -->
-        <!-- 下拉刷新和上拉加载更多的文本 -->
+    <string name="title_contacts">通讯</string>
+    <string name="title_nearby">附近</string>
+    <string name="for_the_moment_no_team">暂无球队</string>
+    <string name="title_my">我的</string>
+
+    <!-- wt 下拉刷新 -->
+    <!-- 下拉刷新和上拉加载更多的文本 -->
     <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
     <string name="pushmsg_center_pull_down_text">下拉可以刷新</string>
     <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
@@ -61,11 +60,16 @@
     <string name="pull_to_refresh_header_hint_loading">正在加载中...</string>
     <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
     <string name="pushmsg_center_no_more_msg">已经到底啦</string>
-      
+
     <!-- sp中的提示 -->
     <string name="sp_cellphone_empty">恩...你的手机号码还没有填写!</string>
     <string name="sp_cellphone_bad">恩...你的手机号码好像不对，检查检查吧!</string>
     <string name="sp_pwd_empty">恩...你的密码还没有填写!</string>
     <string name="sp_pwd_bad">恩...你的密码好像不对，检查检查吧!</string>
+
+    <!-- 通讯tab -->
+    <string name="txt_notify">通知</string>
+    <string name="txt_chat">聊天</string>
+    <string name="txt_team">我的队友</string>
 
 </resources>

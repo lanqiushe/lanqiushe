@@ -6,6 +6,7 @@ import java.util.List;
 import android.app.LocalActivityManager;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.Matrix;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -23,17 +24,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.lanqiushe.R;
- 
+
 import com.lanqiushe.adapter.NotifyMessageAdapter;
 import com.lanqiushe.entity.NotifyMessage;
 import com.lanqiushe.manager.TitleManager;
 
 @SuppressWarnings("deprecation")
 public class ContactsActivity extends BaseActivity implements OnClickListener,
-		OnItemClickListener { 
+		OnItemClickListener {
 
-	private ViewPager mPager;// 页卡内容
-	private List<View> listViews; // Tab页面列表
+	private ViewPager mPager;// 页卡内容  
+	private ArrayList<TextView> tvList;// Tab页面列表
 	private ImageView cursor;// 动画图片
 	private TextView tv_team, tv_notify, tv_chat;// 页卡头标
 	private int offset = 0;// 动画图片偏移量
@@ -55,13 +56,12 @@ public class ContactsActivity extends BaseActivity implements OnClickListener,
 		manager = new LocalActivityManager(this, true);
 		manager.dispatchCreate(savedInstanceState);
 		InitImageView();
-		InitTextView(); 
+		InitTextView();
 		initPagerViewer();
 	}
 
 	void InitImageView() {
 		cursor = (ImageView) findViewById(R.id.cursor);
-		cursor.setPadding(5, 0, 0, 5);
 		bmpW = BitmapFactory.decodeResource(getResources(),
 				R.drawable.line_down).getWidth();// 获取图片宽度
 		DisplayMetrics dm = new DisplayMetrics();
@@ -74,10 +74,16 @@ public class ContactsActivity extends BaseActivity implements OnClickListener,
 	}
 
 	void InitTextView() {
+		tvList = new ArrayList<TextView>();
 		tv_notify = (TextView) findViewById(R.id.tv_notify);
+		tv_notify.setTextColor(Color.rgb(232, 129, 59));
+		tvList.add(tv_notify);
 		tv_chat = (TextView) findViewById(R.id.tv_chat);
+		tv_chat.setTextColor(Color.rgb(146, 148, 151));
+		tvList.add(tv_chat);
 		tv_team = (TextView) findViewById(R.id.tv_team);
-
+		tv_team.setTextColor(Color.rgb(146, 148, 151));
+		tvList.add(tv_team);
 		tv_notify.setOnClickListener(new MyOnClickListener(0));
 		tv_chat.setOnClickListener(new MyOnClickListener(1));
 		tv_team.setOnClickListener(new MyOnClickListener(2));
@@ -189,6 +195,7 @@ public class ContactsActivity extends BaseActivity implements OnClickListener,
 
 		@Override
 		public void onPageSelected(int arg0) {
+			changeNavText(arg0);
 			Animation animation = null;
 			switch (arg0) {
 			case 0:
@@ -238,6 +245,20 @@ public class ContactsActivity extends BaseActivity implements OnClickListener,
 	@Override
 	public void onClick(View arg0) {
 		// TODO Auto-generated method stub
+
+	}
+
+	private void changeNavText(int index) {
+		// 改变导航字体
+		for (int i = 0, len = tvList.size(); i < len; i++) {
+			TextView tv = tvList.get(i);
+			//
+			tv.setTextColor(Color.rgb(146, 148, 151));
+			if (i == index) {// 232,129,59
+				tv.setTextColor(Color.rgb(232, 129, 59));
+			}
+
+		}
 
 	}
 }

@@ -3,13 +3,6 @@ package com.lanqiushe.ui;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import com.lanqiushe.R;
-import com.lanqiushe.manager.StringManager;
-import com.lanqiushe.manager.TitleManager;
-import com.lanqiushe.manager.ToastManager;
-import com.lanqiushe.manager.UIManager;
-
-import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,7 +10,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+
+import com.lanqiushe.R;
+import com.lanqiushe.manager.TitleManager;
+import com.lanqiushe.manager.UIManager;
 
 public class RInputVerificationCodeActivity extends BaseActivity implements
 		OnClickListener {

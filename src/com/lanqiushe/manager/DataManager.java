@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.lanqiushe.entity.ChatMessage;
 import com.lanqiushe.entity.NotifyMessage;
+import com.lanqiushe.entity.TeamMemberMessage;
 
 public class DataManager {
 	public static List<NotifyMessage> getNotifyMessages() {
@@ -25,5 +26,14 @@ public class DataManager {
 			mChatMessages.add(cMessage);
 		}
 		return mChatMessages;
+	}
+	public static List<TeamMemberMessage> getTeamMemberMessages(){
+		List<TeamMemberMessage> mTeamMemberMessages = new ArrayList<TeamMemberMessage>();
+		for (int i = 0; i < 10; i++) {
+			TeamMemberMessage cTeamMemberMessage = new TeamMemberMessage("", "曾文韬", "我是冠军",
+					"控球后卫");
+			mTeamMemberMessages.add(cTeamMemberMessage);
+		}
+		return mTeamMemberMessages; 
 	}
 }
