@@ -1,36 +1,32 @@
 package com.lanqiushe.ui;
-
-import android.app.TabActivity;
-import android.content.Context;
+ 
+import android.app.ActivityGroup;
 import android.content.Intent;
-import android.os.Bundle; 
-import android.widget.RadioButton;
+import android.os.Bundle;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
 
 import com.lanqiushe.R;
 
-public class MainActivity extends TabActivity {
+@SuppressWarnings("deprecation")
+public class MainActivity extends ActivityGroup {
     /** Called when the activity is first created. */
-	private static TabHost tabHost;
-	private static Context context; 
-	private static RadioButton main_tab_myExam;
+	private static TabHost tabHost;  
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState); 
-        setContentView(R.layout.layout_main);
-        context=this; 
-        
-        tabHost=this.getTabHost();
+        setContentView(R.layout.layout_main); 
+        tabHost = (TabHost) findViewById(R.id.tabhost);   
+        tabHost.setup(this.getLocalActivityManager());
         TabHost.TabSpec spec;
         Intent intent;
        
         intent=new Intent().setClass(this, MeActivity.class);
         spec=tabHost.newTabSpec("首页").setIndicator("首页").setContent(intent);
         tabHost.addTab(spec);
-//        
+
         intent=new Intent().setClass(this,NearbyActivity.class);
         spec=tabHost.newTabSpec("附近").setIndicator("附近").setContent(intent);
         tabHost.addTab(spec);

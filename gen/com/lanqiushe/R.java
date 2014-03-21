@@ -12,38 +12,39 @@ public final class R {
         public static final int update_loading_progressbar_anim=0x7f040000;
     }
     public static final class array {
+        public static final int date=0x7f050000;
         /**  设置界面 
          */
-        public static final int set_item=0x7f080000;
+        public static final int set_item=0x7f050001;
     }
     public static final class attr {
     }
     public static final class color {
-        public static final int black=0x7f050009;
+        public static final int black=0x7f060009;
         /**  wt    start 
  底部导航 
          */
-        public static final int bottom_color=0x7f05000c;
-        public static final int common=0x7f050002;
-        public static final int common_color=0x7f050006;
+        public static final int bottom_color=0x7f06000c;
+        public static final int common=0x7f060002;
+        public static final int common_color=0x7f060006;
         /**  lj  end 
  间隔条颜色 
          */
-        public static final int divider=0x7f05000a;
-        public static final int divider_small=0x7f05000b;
-        public static final int et_inside=0x7f050003;
+        public static final int divider=0x7f06000a;
+        public static final int divider_small=0x7f06000b;
+        public static final int et_inside=0x7f060003;
         /**  lj   start 
          */
-        public static final int gray=0x7f050000;
-        public static final int line_color=0x7f050007;
-        public static final int open_title_color=0x7f050005;
-        public static final int red=0x7f050001;
+        public static final int gray=0x7f060000;
+        public static final int line_color=0x7f060007;
+        public static final int open_title_color=0x7f060005;
+        public static final int red=0x7f060001;
         /**  下拉刷新界面中最后更新时间的文字色 
          */
-        public static final int refresh_loading_text_color=0x7f05000d;
-        public static final int refresh_time_text_color=0x7f05000e;
-        public static final int top_nav_bg=0x7f050004;
-        public static final int white=0x7f050008;
+        public static final int refresh_loading_text_color=0x7f06000d;
+        public static final int refresh_time_text_color=0x7f06000e;
+        public static final int top_nav_bg=0x7f060004;
+        public static final int white=0x7f060008;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -52,26 +53,26 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f060000;
-        public static final int activity_vertical_margin=0x7f060001;
-        public static final int picture_pull_to_refresh_footer_height=0x7f06000e;
-        public static final int picture_pull_to_refresh_last_update_time_top_margin=0x7f06000d;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
+        public static final int picture_pull_to_refresh_footer_height=0x7f07000e;
+        public static final int picture_pull_to_refresh_last_update_time_top_margin=0x7f07000d;
         /**  下拉刷新字体 
          */
-        public static final int refresh_loading_text_size=0x7f06000b;
-        public static final int refresh_time_text_size=0x7f06000c;
-        public static final int text_size__nor=0x7f060004;
-        public static final int text_size_large=0x7f060009;
-        public static final int text_size_large_=0x7f06000a;
-        public static final int text_size_nor=0x7f060005;
-        public static final int text_size_nor_=0x7f060006;
-        public static final int text_size_nor__=0x7f060007;
-        public static final int text_size_nor___=0x7f060008;
-        public static final int title_height=0x7f060002;
+        public static final int refresh_loading_text_size=0x7f07000b;
+        public static final int refresh_time_text_size=0x7f07000c;
+        public static final int text_size__nor=0x7f070004;
+        public static final int text_size_large=0x7f070009;
+        public static final int text_size_large_=0x7f07000a;
+        public static final int text_size_nor=0x7f070005;
+        public static final int text_size_nor_=0x7f070006;
+        public static final int text_size_nor__=0x7f070007;
+        public static final int text_size_nor___=0x7f070008;
+        public static final int title_height=0x7f070002;
         /**  Tv字体大小 
          */
-        public static final int tv_size=0x7f06000f;
-        public static final int ui_padding=0x7f060003;
+        public static final int tv_size=0x7f07000f;
+        public static final int ui_padding=0x7f070003;
     }
     public static final class drawable {
         public static final int add=0x7f020000;
@@ -112,132 +113,137 @@ public final class R {
         public static final int selector_top_nav_line_bg=0x7f020023;
         public static final int share_qq=0x7f020024;
         public static final int share_sina=0x7f020025;
-        public static final int sina=0x7f020026;
-        public static final int site=0x7f020027;
-        public static final int title_back=0x7f020028;
-        public static final int title_next=0x7f020029;
-        public static final int title_set_back=0x7f02002a;
-        public static final int top_nav_line_bg_che=0x7f02002b;
-        public static final int top_nav_line_bg_nor=0x7f02002c;
-        public static final int user=0x7f02002d;
-        public static final int user_down=0x7f02002e;
-        public static final int user_img=0x7f02002f;
+        public static final int show_head_toast_bg=0x7f020026;
+        public static final int sidebar_background=0x7f020027;
+        public static final int sina=0x7f020028;
+        public static final int site=0x7f020029;
+        public static final int title_back=0x7f02002a;
+        public static final int title_next=0x7f02002b;
+        public static final int title_set_back=0x7f02002c;
+        public static final int top_nav_line_bg_che=0x7f02002d;
+        public static final int top_nav_line_bg_nor=0x7f02002e;
+        public static final int user=0x7f02002f;
+        public static final int user_down=0x7f020030;
+        public static final int user_img=0x7f020031;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0071;
+        public static final int action_settings=0x7f0b0074;
+        public static final int catalog=0x7f0b0072;
         public static final int chat_messafe_listview=0x7f0b0007;
         public static final int common_scroll_listview=0x7f0b0006;
         public static final int contacts_ballfriend=0x7f0b0008;
         public static final int cursor=0x7f0b0004;
-        public static final int dialog_cancle=0x7f0b000d;
-        public static final int dialog_pb=0x7f0b000a;
-        public static final int dialog_sure=0x7f0b000c;
-        public static final int dialog_tv=0x7f0b000b;
-        public static final int editText1=0x7f0b0045;
-        public static final int empty_warn_tv=0x7f0b000e;
-        public static final int imageView1=0x7f0b002f;
-        public static final int imageView2=0x7f0b0047;
-        public static final int img_back=0x7f0b0053;
-        public static final int img_head=0x7f0b005d;
-        public static final int img_ok=0x7f0b0054;
-        public static final int img_set=0x7f0b0055;
-        public static final int item_me_team_memeber_empty_tv=0x7f0b0011;
-        public static final int item_me_team_memeber_head_iv=0x7f0b000f;
-        public static final int item_me_team_memeber_location_tv=0x7f0b0012;
-        public static final int item_me_team_memeber_name_tv=0x7f0b0010;
-        public static final int item_nearby_distance_tv=0x7f0b0018;
-        public static final int item_nearby_head_iv=0x7f0b0013;
-        public static final int item_nearby_location_tv=0x7f0b0017;
-        public static final int item_nearby_money_tv=0x7f0b0016;
-        public static final int item_nearby_name_tv=0x7f0b0014;
-        public static final int item_nearby_number_tv=0x7f0b0015;
-        public static final int item_set_category_tv=0x7f0b0019;
-        public static final int item_set_open_iv=0x7f0b001b;
-        public static final int item_set_status_tv=0x7f0b001a;
-        public static final int layout_me_lack_or_full_team_in=0x7f0b002e;
-        public static final int layout_me_no_team_in=0x7f0b002d;
-        public static final int login_and_register_login_bt=0x7f0b0027;
-        public static final int login_and_register_qq_ll=0x7f0b0026;
-        public static final int login_and_register_register_bt=0x7f0b0028;
-        public static final int login_and_register_sina_ll=0x7f0b0025;
-        public static final int login_cellphone_et=0x7f0b001f;
-        public static final int login_change_user_tv=0x7f0b001c;
-        public static final int login_forget_pwd_tv=0x7f0b0024;
-        public static final int login_head_iv=0x7f0b001d;
-        public static final int login_lock_rl=0x7f0b0021;
-        public static final int login_login_bt=0x7f0b0022;
-        public static final int login_newuser_tv=0x7f0b0023;
-        public static final int login_pwd_et=0x7f0b0020;
-        public static final int login_username_tv=0x7f0b001e;
-        public static final int main_tab_group=0x7f0b0029;
-        public static final int main_tab_me=0x7f0b002a;
-        public static final int main_tab_message=0x7f0b002c;
-        public static final int main_tab_near=0x7f0b002b;
-        public static final int me_add_iv=0x7f0b0034;
-        public static final int me_ball_iv=0x7f0b0032;
-        public static final int me_create_team_bt=0x7f0b0039;
-        public static final int me_exit_bt=0x7f0b0036;
-        public static final int me_head_tv=0x7f0b0030;
-        public static final int me_invite_bt=0x7f0b0035;
-        public static final int me_name_tv=0x7f0b0031;
-        public static final int me_teamname_tv=0x7f0b0033;
-        public static final int me_warn_no_team_tv=0x7f0b0037;
-        public static final int me_warn_tv=0x7f0b0038;
-        public static final int nearby_ballfriend_lv=0x7f0b003b;
-        public static final int nearby_park_lv=0x7f0b003c;
-        public static final int nearby_team_lv=0x7f0b003d;
-        public static final int nearby_vp=0x7f0b003a;
-        public static final int notify_messafe_listview=0x7f0b0009;
-        public static final int perfect_data_location_tv=0x7f0b0046;
-        public static final int perfect_data_sex_tv=0x7f0b0048;
-        public static final int perfect_nickname=0x7f0b0044;
-        public static final int pull_to_load_footer_content=0x7f0b0066;
-        public static final int pull_to_load_footer_hint_textview=0x7f0b0068;
-        public static final int pull_to_load_footer_progressbar=0x7f0b0067;
-        public static final int pull_to_refresh_header_arrow=0x7f0b006e;
-        public static final int pull_to_refresh_header_content=0x7f0b0069;
-        public static final int pull_to_refresh_header_hint_textview=0x7f0b006b;
-        public static final int pull_to_refresh_header_progressbar=0x7f0b006f;
-        public static final int pull_to_refresh_header_text=0x7f0b006a;
-        public static final int pull_to_refresh_header_time=0x7f0b006d;
-        public static final int pull_to_refresh_last_update_time_text=0x7f0b006c;
-        public static final int register_cellphone_et=0x7f0b003e;
-        public static final int register_input_pwd_et=0x7f0b003f;
-        public static final int register_input_pwd_lock_iv=0x7f0b0041;
-        public static final int register_input_pwd_lock_rl=0x7f0b0040;
-        public static final int register_share_bt=0x7f0b0049;
-        public static final int set_common_scroll_listview=0x7f0b004a;
-        public static final int set_exit_login_bt=0x7f0b004b;
-        public static final int tab_iv=0x7f0b0070;
+        public static final int dialog=0x7f0b0009;
+        public static final int dialog_cancle=0x7f0b000f;
+        public static final int dialog_pb=0x7f0b000c;
+        public static final int dialog_sure=0x7f0b000e;
+        public static final int dialog_tv=0x7f0b000d;
+        public static final int editText1=0x7f0b0049;
+        public static final int empty_warn_tv=0x7f0b0010;
+        public static final int hometabs=0x7f0b002b;
+        public static final int imageView1=0x7f0b0033;
+        public static final int imageView2=0x7f0b004b;
+        public static final int img_back=0x7f0b0057;
+        public static final int img_head=0x7f0b0061;
+        public static final int img_ok=0x7f0b0058;
+        public static final int img_set=0x7f0b0059;
+        public static final int item_me_team_memeber_empty_tv=0x7f0b0013;
+        public static final int item_me_team_memeber_head_iv=0x7f0b0011;
+        public static final int item_me_team_memeber_location_tv=0x7f0b0014;
+        public static final int item_me_team_memeber_name_tv=0x7f0b0012;
+        public static final int item_nearby_distance_tv=0x7f0b001a;
+        public static final int item_nearby_head_iv=0x7f0b0015;
+        public static final int item_nearby_location_tv=0x7f0b0019;
+        public static final int item_nearby_money_tv=0x7f0b0018;
+        public static final int item_nearby_name_tv=0x7f0b0016;
+        public static final int item_nearby_number_tv=0x7f0b0017;
+        public static final int item_set_category_tv=0x7f0b001b;
+        public static final int item_set_open_iv=0x7f0b001d;
+        public static final int item_set_status_tv=0x7f0b001c;
+        public static final int layout_me_lack_or_full_team_in=0x7f0b0032;
+        public static final int layout_me_no_team_in=0x7f0b0031;
+        public static final int login_and_register_login_bt=0x7f0b0029;
+        public static final int login_and_register_qq_ll=0x7f0b0028;
+        public static final int login_and_register_register_bt=0x7f0b002a;
+        public static final int login_and_register_sina_ll=0x7f0b0027;
+        public static final int login_cellphone_et=0x7f0b0021;
+        public static final int login_change_user_tv=0x7f0b001e;
+        public static final int login_forget_pwd_tv=0x7f0b0026;
+        public static final int login_head_iv=0x7f0b001f;
+        public static final int login_lock_rl=0x7f0b0023;
+        public static final int login_login_bt=0x7f0b0024;
+        public static final int login_newuser_tv=0x7f0b0025;
+        public static final int login_pwd_et=0x7f0b0022;
+        public static final int login_username_tv=0x7f0b0020;
+        public static final int main_tab_group=0x7f0b002d;
+        public static final int main_tab_me=0x7f0b002e;
+        public static final int main_tab_message=0x7f0b0030;
+        public static final int main_tab_near=0x7f0b002f;
+        public static final int me_add_iv=0x7f0b0038;
+        public static final int me_ball_iv=0x7f0b0036;
+        public static final int me_create_team_bt=0x7f0b003d;
+        public static final int me_exit_bt=0x7f0b003a;
+        public static final int me_head_tv=0x7f0b0034;
+        public static final int me_invite_bt=0x7f0b0039;
+        public static final int me_name_tv=0x7f0b0035;
+        public static final int me_teamname_tv=0x7f0b0037;
+        public static final int me_warn_no_team_tv=0x7f0b003b;
+        public static final int me_warn_tv=0x7f0b003c;
+        public static final int nearby_ballfriend_lv=0x7f0b003f;
+        public static final int nearby_park_lv=0x7f0b0040;
+        public static final int nearby_team_lv=0x7f0b0041;
+        public static final int nearby_vp=0x7f0b003e;
+        public static final int notify_messafe_listview=0x7f0b000b;
+        public static final int perfect_data_location_tv=0x7f0b004a;
+        public static final int perfect_data_sex_tv=0x7f0b004c;
+        public static final int perfect_nickname=0x7f0b0048;
+        public static final int pull_to_load_footer_content=0x7f0b0068;
+        public static final int pull_to_load_footer_hint_textview=0x7f0b006a;
+        public static final int pull_to_load_footer_progressbar=0x7f0b0069;
+        public static final int pull_to_refresh_header_arrow=0x7f0b0070;
+        public static final int pull_to_refresh_header_content=0x7f0b006b;
+        public static final int pull_to_refresh_header_hint_textview=0x7f0b006d;
+        public static final int pull_to_refresh_header_progressbar=0x7f0b0071;
+        public static final int pull_to_refresh_header_text=0x7f0b006c;
+        public static final int pull_to_refresh_header_time=0x7f0b006f;
+        public static final int pull_to_refresh_last_update_time_text=0x7f0b006e;
+        public static final int register_cellphone_et=0x7f0b0042;
+        public static final int register_input_pwd_et=0x7f0b0043;
+        public static final int register_input_pwd_lock_iv=0x7f0b0045;
+        public static final int register_input_pwd_lock_rl=0x7f0b0044;
+        public static final int register_share_bt=0x7f0b004d;
+        public static final int set_common_scroll_listview=0x7f0b004e;
+        public static final int set_exit_login_bt=0x7f0b004f;
+        public static final int sidrbar=0x7f0b000a;
+        public static final int tab_iv=0x7f0b0073;
         public static final int tab_layout=0x7f0b0000;
-        public static final int title_back_iv=0x7f0b004d;
-        public static final int title_next_iv=0x7f0b0052;
-        public static final int title_ok_iv=0x7f0b0050;
-        public static final int title_root_rl=0x7f0b004c;
-        public static final int title_set_back_ll=0x7f0b004e;
-        public static final int title_set_iv=0x7f0b0051;
-        public static final int title_title_tv=0x7f0b004f;
-        public static final int top_nav_left_line=0x7f0b005a;
-        public static final int top_nav_left_tv=0x7f0b0056;
-        public static final int top_nav_middle_line=0x7f0b005b;
-        public static final int top_nav_middle_tv=0x7f0b0057;
-        public static final int top_nav_rb=0x7f0b0059;
-        public static final int top_nav_right_line=0x7f0b005c;
-        public static final int top_nav_right_tv=0x7f0b0058;
+        public static final int tabhost=0x7f0b002c;
+        public static final int title_back_iv=0x7f0b0051;
+        public static final int title_next_iv=0x7f0b0056;
+        public static final int title_ok_iv=0x7f0b0054;
+        public static final int title_root_rl=0x7f0b0050;
+        public static final int title_set_back_ll=0x7f0b0052;
+        public static final int title_set_iv=0x7f0b0055;
+        public static final int title_title_tv=0x7f0b0053;
+        public static final int top_nav_left_line=0x7f0b005e;
+        public static final int top_nav_left_tv=0x7f0b005a;
+        public static final int top_nav_middle_line=0x7f0b005f;
+        public static final int top_nav_middle_tv=0x7f0b005b;
+        public static final int top_nav_rb=0x7f0b005d;
+        public static final int top_nav_right_line=0x7f0b0060;
+        public static final int top_nav_right_tv=0x7f0b005c;
         public static final int tv_chat=0x7f0b0002;
-        public static final int tv_chat_info=0x7f0b005f;
-        public static final int tv_chat_time=0x7f0b0060;
-        public static final int tv_chat_user=0x7f0b005e;
+        public static final int tv_chat_info=0x7f0b0063;
+        public static final int tv_chat_time=0x7f0b0064;
+        public static final int tv_chat_user=0x7f0b0062;
         public static final int tv_notify=0x7f0b0001;
-        public static final int tv_notify_info=0x7f0b0062;
-        public static final int tv_notify_title=0x7f0b0061;
+        public static final int tv_notify_info=0x7f0b0066;
+        public static final int tv_notify_title=0x7f0b0065;
         public static final int tv_team=0x7f0b0003;
-        public static final int tv_team_member_info=0x7f0b0064;
-        public static final int tv_team_member_name=0x7f0b0063;
-        public static final int tv_team_member_role=0x7f0b0065;
+        public static final int tv_team_member_name=0x7f0b0067;
         public static final int vPager=0x7f0b0005;
-        public static final int verification_code_time_tv=0x7f0b0043;
-        public static final int verification_code_tv=0x7f0b0042;
+        public static final int verification_code_time_tv=0x7f0b0047;
+        public static final int verification_code_tv=0x7f0b0046;
     }
     public static final class layout {
         public static final int activity_contacts=0x7f030000;
@@ -279,75 +285,76 @@ public final class R {
         public static final int list_team_member_item=0x7f030024;
         public static final int pull_to_load_footer=0x7f030025;
         public static final int pull_to_refresh_header=0x7f030026;
-        public static final int tab_main_nav=0x7f030027;
+        public static final int suoying_item=0x7f030027;
+        public static final int tab_main_nav=0x7f030028;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
     }
     public static final class string {
-        public static final int action_settings=0x7f070001;
-        public static final int again_get_verification_code=0x7f07000f;
-        public static final int app_name=0x7f070000;
-        public static final int ballfriend=0x7f07001f;
-        public static final int ballpark=0x7f070020;
-        public static final int change_user=0x7f07000c;
-        public static final int create_team=0x7f070019;
-        public static final int exit_login=0x7f07001d;
-        public static final int exit_team=0x7f07001b;
-        public static final int for_the_moment_no_team=0x7f070023;
-        public static final int forget_pwd=0x7f070006;
-        public static final int hello_world=0x7f070002;
-        public static final int invite_friend=0x7f07001a;
-        public static final int location=0x7f070012;
-        public static final int login=0x7f070007;
-        public static final int me_wran=0x7f070018;
-        public static final int new_share=0x7f070016;
-        public static final int new_user=0x7f070005;
-        public static final int nickname=0x7f070011;
-        public static final int perfect_data=0x7f070015;
-        public static final int please_click_input=0x7f070014;
-        public static final int please_input_verification_code=0x7f07000e;
+        public static final int action_settings=0x7f080001;
+        public static final int again_get_verification_code=0x7f08000f;
+        public static final int app_name=0x7f080000;
+        public static final int ballfriend=0x7f08001f;
+        public static final int ballpark=0x7f080020;
+        public static final int change_user=0x7f08000c;
+        public static final int create_team=0x7f080019;
+        public static final int exit_login=0x7f08001d;
+        public static final int exit_team=0x7f08001b;
+        public static final int for_the_moment_no_team=0x7f080023;
+        public static final int forget_pwd=0x7f080006;
+        public static final int hello_world=0x7f080002;
+        public static final int invite_friend=0x7f08001a;
+        public static final int location=0x7f080012;
+        public static final int login=0x7f080007;
+        public static final int me_wran=0x7f080018;
+        public static final int new_share=0x7f080016;
+        public static final int new_user=0x7f080005;
+        public static final int nickname=0x7f080011;
+        public static final int perfect_data=0x7f080015;
+        public static final int please_click_input=0x7f080014;
+        public static final int please_input_verification_code=0x7f08000e;
         /**  登录注册模块 
          */
-        public static final int please_input_your_cellphone=0x7f070003;
-        public static final int please_input_your_pwd=0x7f070008;
-        public static final int pull_to_refresh_footer_hint_ready=0x7f070029;
-        public static final int pull_to_refresh_header_hint_loading=0x7f07002a;
+        public static final int please_input_your_cellphone=0x7f080003;
+        public static final int please_input_your_pwd=0x7f080008;
+        public static final int pull_to_refresh_footer_hint_ready=0x7f080029;
+        public static final int pull_to_refresh_header_hint_loading=0x7f08002a;
         /**  wt 下拉刷新 
  下拉刷新和上拉加载更多的文本 
          */
-        public static final int pull_to_refresh_header_hint_normal2=0x7f070025;
-        public static final int pull_to_refresh_header_hint_ready=0x7f070027;
-        public static final int pull_to_refresh_network_error=0x7f07002b;
-        public static final int pushmsg_center_no_more_msg=0x7f07002c;
-        public static final int pushmsg_center_pull_down_text=0x7f070026;
-        public static final int pushmsg_center_pull_down_update_time=0x7f070028;
-        public static final int qq_login=0x7f07000a;
-        public static final int register=0x7f07000b;
-        public static final int sex=0x7f070013;
-        public static final int share=0x7f070017;
-        public static final int sina_login=0x7f070009;
-        public static final int sp_cellphone_bad=0x7f07002e;
+        public static final int pull_to_refresh_header_hint_normal2=0x7f080025;
+        public static final int pull_to_refresh_header_hint_ready=0x7f080027;
+        public static final int pull_to_refresh_network_error=0x7f08002b;
+        public static final int pushmsg_center_no_more_msg=0x7f08002c;
+        public static final int pushmsg_center_pull_down_text=0x7f080026;
+        public static final int pushmsg_center_pull_down_update_time=0x7f080028;
+        public static final int qq_login=0x7f08000a;
+        public static final int register=0x7f08000b;
+        public static final int sex=0x7f080013;
+        public static final int share=0x7f080017;
+        public static final int sina_login=0x7f080009;
+        public static final int sp_cellphone_bad=0x7f08002e;
         /**  sp中的提示 
          */
-        public static final int sp_cellphone_empty=0x7f07002d;
-        public static final int sp_pwd_bad=0x7f070030;
-        public static final int sp_pwd_empty=0x7f07002f;
+        public static final int sp_cellphone_empty=0x7f08002d;
+        public static final int sp_pwd_bad=0x7f080030;
+        public static final int sp_pwd_empty=0x7f08002f;
         /**  附近 
          */
-        public static final int team=0x7f07001e;
-        public static final int title_contacts=0x7f070021;
-        public static final int title_input_cellphone=0x7f070004;
-        public static final int title_input_pwd=0x7f070010;
-        public static final int title_input_verification_code=0x7f07000d;
-        public static final int title_my=0x7f070024;
-        public static final int title_nearby=0x7f070022;
-        public static final int title_set=0x7f07001c;
-        public static final int txt_chat=0x7f070032;
+        public static final int team=0x7f08001e;
+        public static final int title_contacts=0x7f080021;
+        public static final int title_input_cellphone=0x7f080004;
+        public static final int title_input_pwd=0x7f080010;
+        public static final int title_input_verification_code=0x7f08000d;
+        public static final int title_my=0x7f080024;
+        public static final int title_nearby=0x7f080022;
+        public static final int title_set=0x7f08001c;
+        public static final int txt_chat=0x7f080032;
         /**  通讯tab 
          */
-        public static final int txt_notify=0x7f070031;
-        public static final int txt_team=0x7f070033;
+        public static final int txt_notify=0x7f080031;
+        public static final int txt_team=0x7f080033;
     }
     public static final class style {
         /**  Application theme. 

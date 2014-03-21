@@ -53,27 +53,19 @@ public class TeamMemberMessageAdpter extends BaseAdapter {
 			holder.img_head = (ImageView) convertView
 					.findViewById(R.id.img_head);
 			holder.tv_team_member_name = (TextView) convertView
-					.findViewById(R.id.tv_team_member_name);
-			holder.tv_team_member_info = (TextView) convertView
-					.findViewById(R.id.tv_team_member_info);
-			holder.tv_team_member_role = (TextView) convertView
-					.findViewById(R.id.tv_team_member_role);
+					.findViewById(R.id.tv_team_member_name); 
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();
 		}
 		holder.tv_team_member_name.setText(mData.get(position)
-				.getTeam_member_name());
-		holder.tv_team_member_info.setText(mData.get(position)
-				.getTeam_member_info());
-		holder.tv_team_member_role.setText(mData.get(position)
-				.getTeam_member_role());
+				.getTeam_member_name()); 
 		return convertView;
 	}
 
 	private static class ViewHolder {
 		ImageView img_head;
-		TextView tv_team_member_name, tv_team_member_info, tv_team_member_role;
+		TextView tv_team_member_name;
 	}
 
 }
