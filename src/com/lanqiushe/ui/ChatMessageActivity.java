@@ -6,9 +6,12 @@ import java.util.List;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
 
 import com.eims.pullrefresh.ui.PullToRefreshBase;
@@ -18,9 +21,9 @@ import com.lanqiushe.R;
 import com.lanqiushe.adapter.ChatMessageAdapter;
 import com.lanqiushe.entity.ChatMessage;
 import com.lanqiushe.manager.DataManager;
-import com.lanqiushe.manager.ToastManager;
 import com.lanqiushe.manager.UIManager;
 import com.lanqiushe.view.BaseListView;
+import com.lanqiushe.view.BasePopupWindow;
 
 public class ChatMessageActivity extends BaseActivity {
 	ChatMessageAdapter adapter;
@@ -30,7 +33,7 @@ public class ChatMessageActivity extends BaseActivity {
 	private SimpleDateFormat mDateFormat = new SimpleDateFormat("MM-dd HH:mm");
 	private boolean mIsStart = true;
 	private int mCurIndex = 0;
-
+	BasePopupWindow mPopWindow;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.contacts_chat);
@@ -57,28 +60,45 @@ public class ChatMessageActivity extends BaseActivity {
 		mListView.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
-			public void onItemClick(AdapterView<?> parent, View view, int position,
-					long id) {
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
 				ListView listView = (ListView) parent;
 				@SuppressWarnings("unchecked")
 				ChatMessage mChatMessage = (ChatMessage) listView
 						.getItemAtPosition(position);
-				UIManager.switcher(ChatMessageActivity.this, ChatActivity.class);
+				UIManager
+						.switcher(ChatMessageActivity.this, ChatActivity.class);
 			}
 		});
-		mPullListView.setOnRefreshListener(new OnRefreshListener<BaseListView>() {
-			@Override
-			public void onPullDownToRefresh(
-					PullToRefreshBase<BaseListView> refreshView) {
-				mIsStart = true;
-				new GetDataTask().execute();
-			}
+		mPullListView
+				.setOnRefreshListener(new OnRefreshListener<BaseListView>() {
+					@Override
+					public void onPullDownToRefresh(
+							PullToRefreshBase<BaseListView> refreshView) {
+						mIsStart = true;
+						new GetDataTask().execute();
+					}
+
+					@Override
+					public void onPullUpToRefresh(
+							PullToRefreshBase<BaseListView> refreshView) {
+						mIsStart = false;
+						new GetDataTask().execute();
+					}
+				});
+		mListView.setOnItemLongClickListener(new OnItemLongClickListener() {
 
 			@Override
-			public void onPullUpToRefresh(
-					PullToRefreshBase<BaseListView> refreshView) {
-				mIsStart = false;
-				new GetDataTask().execute();
+			public boolean onItemLongClick(AdapterView<?> arg0, View arg1,
+					int arg2, long arg3) {
+				// TODO 弹出分享浮动框
+				mPopWindow = new BasePopupWindow(ChatMessageActivity.this,
+						itemsOnClick);
+
+				// 显示窗口
+				mPopWindow.showAtLocation(ChatMessageActivity.this.findViewById(R.id.chat_messafe_listview),
+						Gravity.CENTER | Gravity.CENTER_HORIZONTAL, 0, 0); // 设置layout在PopupWindow中显示的位置
+				return false;
 			}
 		});
 		setLastUpdateTime();
@@ -127,6 +147,18 @@ public class ChatMessageActivity extends BaseActivity {
 			super.onPostExecute(result);
 		}
 	}
+
+	// 为弹出窗口实现监听类
+	private OnClickListener itemsOnClick = new OnClickListener() {
+		public void onClick(View v) {
+			mPopWindow.dismiss();
+			switch (v.getId()) {
+
+			default:
+				break;
+			}
+		}
+	};
 
 	private void setLastUpdateTime() {
 		String text = formatDateTime(System.currentTimeMillis());
