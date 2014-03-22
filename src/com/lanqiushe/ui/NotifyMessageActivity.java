@@ -11,7 +11,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-import com.eims.pullrefresh.ui.MyListView;
 import com.eims.pullrefresh.ui.PullToRefreshBase;
 import com.eims.pullrefresh.ui.PullToRefreshBase.OnRefreshListener;
 import com.eims.pullrefresh.ui.PullToRefreshListView;
@@ -19,6 +18,7 @@ import com.lanqiushe.R;
 import com.lanqiushe.adapter.NotifyMessageAdapter;
 import com.lanqiushe.entity.NotifyMessage;
 import com.lanqiushe.manager.DataManager;
+import com.lanqiushe.view.BaseListView;
  
 
 public class NotifyMessageActivity extends BaseActivity {
@@ -62,17 +62,17 @@ public class NotifyMessageActivity extends BaseActivity {
 
 			}
 		});
-		mPullListView.setOnRefreshListener(new OnRefreshListener<MyListView>() {
+		mPullListView.setOnRefreshListener(new OnRefreshListener<BaseListView>() {
 			@Override
 			public void onPullDownToRefresh(
-					PullToRefreshBase<MyListView> refreshView) {
+					PullToRefreshBase<BaseListView> refreshView) {
 				mIsStart = true;
 				new GetDataTask().execute();
 			}
 
 			@Override
 			public void onPullUpToRefresh(
-					PullToRefreshBase<MyListView> refreshView) {
+					PullToRefreshBase<BaseListView> refreshView) {
 				mIsStart = false;
 				new GetDataTask().execute();
 			}

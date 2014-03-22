@@ -11,7 +11,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-import com.eims.pullrefresh.ui.MyListView;
 import com.eims.pullrefresh.ui.PullToRefreshBase;
 import com.eims.pullrefresh.ui.PullToRefreshBase.OnRefreshListener;
 import com.eims.pullrefresh.ui.PullToRefreshListView;
@@ -20,6 +19,8 @@ import com.lanqiushe.adapter.ChatMessageAdapter;
 import com.lanqiushe.entity.ChatMessage;
 import com.lanqiushe.manager.DataManager;
 import com.lanqiushe.manager.ToastManager;
+import com.lanqiushe.manager.UIManager;
+import com.lanqiushe.view.BaseListView;
 
 public class ChatMessageActivity extends BaseActivity {
 	ChatMessageAdapter adapter;
@@ -62,20 +63,20 @@ public class ChatMessageActivity extends BaseActivity {
 				@SuppressWarnings("unchecked")
 				ChatMessage mChatMessage = (ChatMessage) listView
 						.getItemAtPosition(position);
-				ToastManager.show(ChatMessageActivity.this, mChatMessage.getChat_message_info());
+				UIManager.switcher(ChatMessageActivity.this, ChatActivity.class);
 			}
 		});
-		mPullListView.setOnRefreshListener(new OnRefreshListener<MyListView>() {
+		mPullListView.setOnRefreshListener(new OnRefreshListener<BaseListView>() {
 			@Override
 			public void onPullDownToRefresh(
-					PullToRefreshBase<MyListView> refreshView) {
+					PullToRefreshBase<BaseListView> refreshView) {
 				mIsStart = true;
 				new GetDataTask().execute();
 			}
 
 			@Override
 			public void onPullUpToRefresh(
-					PullToRefreshBase<MyListView> refreshView) {
+					PullToRefreshBase<BaseListView> refreshView) {
 				mIsStart = false;
 				new GetDataTask().execute();
 			}

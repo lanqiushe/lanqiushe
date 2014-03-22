@@ -52,6 +52,8 @@
         </activity>
         <activity android:name=".ui.TeamMessageActivity" >
         </activity>
+        <activity android:name=".ui.ChatActivity" >
+        </activity>
     </application>
 
 </manifest>

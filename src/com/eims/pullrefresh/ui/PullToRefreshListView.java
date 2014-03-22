@@ -1,7 +1,5 @@
 package com.eims.pullrefresh.ui;
 
-import com.eims.pullrefresh.ui.ILoadingLayout.State;
-
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
@@ -10,23 +8,26 @@ import android.widget.AbsListView.OnScrollListener;
 import android.widget.Adapter;
 import android.widget.ListView;
 
+import com.eims.pullrefresh.ui.ILoadingLayout.State;
+import com.lanqiushe.view.BaseListView;
+
 /**
- * 这个类实现了ListView下拉刷新，上加载更多和滑到底部自动加载
+ * 杩欎釜绫诲疄鐜颁簡ListView涓嬫媺鍒锋柊锛屼笂鍔犺浇鏇村鍜屾粦鍒板簳閮ㄨ嚜鍔ㄥ姞杞�
  * 
  * @author Li Hong
  * @since 2013-8-15
  */
-public class PullToRefreshListView extends PullToRefreshBase<MyListView> implements OnScrollListener {
+public class PullToRefreshListView extends PullToRefreshBase<BaseListView> implements OnScrollListener {
     
     /**ListView*/
     private ListView mListView;
-    /**用于滑到底部自动加载的Footer*/
+    /**鐢ㄤ簬婊戝埌搴曢儴鑷姩鍔犺浇鐨凢ooter*/
     private LoadingLayout mLoadMoreFooterLayout;
-    /**滚动的监听器*/
+    /**婊氬姩鐨勭洃鍚櫒*/
     private OnScrollListener mScrollListener;
     
     /**
-     * 构造方法
+     * 鏋勯�鏂规硶
      * 
      * @param context context
      */
@@ -35,7 +36,7 @@ public class PullToRefreshListView extends PullToRefreshBase<MyListView> impleme
     }
     
     /**
-     * 构造方法
+     * 鏋勯�鏂规硶
      * 
      * @param context context
      * @param attrs attrs
@@ -45,7 +46,7 @@ public class PullToRefreshListView extends PullToRefreshBase<MyListView> impleme
     }
     
     /**
-     * 构造方法
+     * 鏋勯�鏂规硶
      * 
      * @param context context
      * @param attrs attrs
@@ -58,8 +59,8 @@ public class PullToRefreshListView extends PullToRefreshBase<MyListView> impleme
     }
 
     @Override
-    protected MyListView createRefreshableView(Context context, AttributeSet attrs) {
-        MyListView listView = new MyListView(context);
+    protected BaseListView createRefreshableView(Context context, AttributeSet attrs) {
+        BaseListView listView = new BaseListView(context);
         mListView = listView;
         listView.setOnScrollListener(this);
         
@@ -67,9 +68,9 @@ public class PullToRefreshListView extends PullToRefreshBase<MyListView> impleme
     }
     
     /**
-     * 设置是否有更多数据的标志
+     * 璁剧疆鏄惁鏈夋洿澶氭暟鎹殑鏍囧織
      * 
-     * @param hasMoreData true表示还有更多的数据，false表示没有更多数据了
+     * @param hasMoreData true琛ㄧず杩樻湁鏇村鐨勬暟鎹紝false琛ㄧず娌℃湁鏇村鏁版嵁浜�
      */
     public void setHasMoreData(boolean hasMoreData) {
         if (!hasMoreData) {
@@ -85,9 +86,9 @@ public class PullToRefreshListView extends PullToRefreshBase<MyListView> impleme
     }
 
     /**
-     * 设置滑动的监听器
+     * 璁剧疆婊戝姩鐨勭洃鍚櫒
      * 
-     * @param l 监听器
+     * @param l 鐩戝惉鍣�
      */
     public void setOnScrollListener(OnScrollListener l) {
         mScrollListener = l;
@@ -126,7 +127,7 @@ public class PullToRefreshListView extends PullToRefreshBase<MyListView> impleme
         super.setScrollLoadEnabled(scrollLoadEnabled);
         
         if (scrollLoadEnabled) {
-            // 设置Footer
+            // 璁剧疆Footer
             if (null == mLoadMoreFooterLayout) {
                 mLoadMoreFooterLayout = new FooterLoadingLayout(getContext());
             }
@@ -180,9 +181,9 @@ public class PullToRefreshListView extends PullToRefreshBase<MyListView> impleme
     }
     
     /**
-     * 表示是否还有更多数据
+     * 琛ㄧず鏄惁杩樻湁鏇村鏁版嵁
      * 
-     * @return true表示还有更多数据
+     * @return true琛ㄧず杩樻湁鏇村鏁版嵁
      */
     private boolean hasMoreData() {
         if ((null != mLoadMoreFooterLayout) && (mLoadMoreFooterLayout.getState() == State.NO_MORE_DATA)) {
@@ -193,9 +194,9 @@ public class PullToRefreshListView extends PullToRefreshBase<MyListView> impleme
     }
     
     /**
-     * 判断第一个child是否完全显示出来
+     * 鍒ゆ柇绗竴涓猚hild鏄惁瀹屽叏鏄剧ず鍑烘潵
      * 
-     * @return true完全显示出来，否则false
+     * @return true瀹屽叏鏄剧ず鍑烘潵锛屽惁鍒檉alse
      */
     private boolean isFirstItemVisible() {
         final Adapter adapter = mListView.getAdapter();
@@ -213,9 +214,9 @@ public class PullToRefreshListView extends PullToRefreshBase<MyListView> impleme
     }
 
     /**
-     * 判断最后一个child是否完全显示出来
+     * 鍒ゆ柇鏈�悗涓�釜child鏄惁瀹屽叏鏄剧ず鍑烘潵
      * 
-     * @return true完全显示出来，否则false
+     * @return true瀹屽叏鏄剧ず鍑烘潵锛屽惁鍒檉alse
      */
     private boolean isLastItemVisible() {
         final Adapter adapter = mListView.getAdapter();
